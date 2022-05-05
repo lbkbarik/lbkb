@@ -1,0 +1,704 @@
+/*------------- Author: Lalatendu Bidyadhara Kumar Barik -----------------*/
+body,td,th,tr,p,a{
+font-family:'Lato', Verdana, Helvetica, sans-serif;
+font-size:13px;
+}
+body{
+overflow:scroll;
+overflow-x:hidden;
+background:#ffffff;
+font-family:'Lato', Verdana, Helvetica, sans-serif;
+}
+a{
+color:#a40008;
+text-decoration:none;
+}
+a:focus, a:hover{
+color:#ff0000;
+text-decoration:none;
+}
+hr{
+color:#000000;
+}
+h2{
+color:#000000;
+font-size:12px;
+font-family:'Lato', Verdana, Helvetica, sans-serif;
+margin:0 0 0 0;
+}
+author-name{
+font-family:'Lato', Verdana, Helvetica, sans-serif;
+color:#000000;
+font-size:44px;
+text-align:justify;
+}
+author-headline{
+font-family:'Lato', Verdana, Helvetica, sans-serif;
+color:#000000;
+font-size:25px;
+text-align:center;
+}
+author-subheadline{
+font-family:'Lato', Verdana, Helvetica, sans-serif;
+color:#000000;
+font-size:20px;
+text-align:center;
+}
+author-subheadlinetitle{
+font-family:'Lato', Verdana, Helvetica, sans-serif;
+color:#000000;
+font-size:16px;
+text-align:center;
+}
+heading{
+font-family:'Lato', Verdana, Helvetica, sans-serif;
+font-size:15px;
+font-weight:bold;
+}
+.homecarousel{
+display:none;
+}
+hr{
+color:#000000;
+}
+.high-alert{
+padding:5px 10px 5px 10px;
+background-color:#127622;
+color:#ffffff;
+margin-left:5px;
+margin-right:5px;
+font-size:10px;
+font-family:'Lato', Verdana, Helvetica, sans-serif;
+border-radius:4px 4px 4px 4px;
+}
+.high-alert-close-button{
+margin-left:15px;
+color:#ffffff;
+float:right;
+cursor:pointer;
+transition:0.3s;
+}
+.high-alert-close-button:hover{
+color:#000000;
+}
+/*-------------Search------------------------*/
+.search{
+border-radius:5px;
+float:none;
+margin:0 20px 20px 0;
+}
+
+.search input{
+width:610px;
+height:20px;
+padding:10px 5px;
+margin-left:20px;
+float:left;
+border:0;
+background:#ffffff;
+border:1px solid #a40008;
+border-radius:5px 0 0 5px;
+}
+
+.search input:focus{
+outline:0;
+background:#ffffff;
+box-shadow:0 0 2px #a40008 inset;
+}
+
+.search button{
+overflow:visible;
+position:relative;
+float:right;
+margin-right:20px;
+border:0;
+padding:0;
+cursor:pointer;
+height:22px;
+width:90px;
+color:#ffffff;
+font-weight:bold;
+font-size:13px;
+text-transform:normal;
+background:#680000;
+text-shadow:0 -1px 0 rgba(0, 0 ,0, .4);
+border-radius:0 5px 5px 0;
+}
+
+.search button:hover{
+background:#ff0000;
+}
+
+.search button:active,
+.search button:focus{
+background:#ff0000;
+}
+
+.search button:before{
+content:'';
+position:absolute;
+border-width:0px 0px 0px 0px;
+border-style:solid solid solid none;
+border-color:transparent #a40008 transparent;
+top:12px;
+left:-6px;
+}
+/*-------------/Search -----------------*/
+/*-------------News & Events-----------------*/
+#answer,
+#show,
+#hide:target {
+	display: none;
+}
+#hide:target + #show,
+#hide:target ~ #answer {
+	display: inherit;
+}
+.lbkbne-id-details-warpper{
+display:flex;
+flex-direction:column;
+align-items:left;
+margin-left:5px;
+margin-right:5px;
+}
+.lbkbne-id-details-tab{
+cursor:pointer;
+padding:10px 20px;
+margin:0px 2px;
+background:#000000;
+display:inline-block;
+color:#ffffff;
+border-radius:3px 3px 0px 0px;
+box-shadow:0 0.1rem 0.1rem #000000;
+}
+.lbkbne-id-details-panels{
+background:#ffffff;
+min-height:200px;
+width:100%;
+min-width:95%;
+max-width:95%;
+border-radius:3px;
+border:1px solid #000000;
+overflow:hidden;
+padding:20px;
+}
+.lbkbne-id-details-panel{
+display:none;
+animation:fadein .8s;
+}
+@keyframes fadein{
+from{opacity:0;}
+to{opacity:1;}
+}
+.lbkbne-id-details-panel-title{
+font-size:15px;
+font-weight:bold;
+color:#000000;
+}
+.radio{
+display:none;
+}
+#lbkbne-one:checked ~ .lbkbne-id-details-panels #lbkbne-child-one-panel,
+#lbkbne-two:checked ~ .lbkbne-id-details-panels #lbkbne-child-two-panel,
+#lbkbne-three:checked ~ .lbkbne-id-details-panels #lbkbne-child-three-panel,
+#lbkbne-four:checked ~ .lbkbne-id-details-panels #lbkbne-child-four-panel,
+#lbkbne-five:checked ~ .lbkbne-id-details-panels #lbkbne-child-five-panel,
+#lbkbne-six:checked ~ .lbkbne-id-details-panels #lbkbne-child-six-panel,
+#lbkbne-seven:checked ~ .lbkbne-id-details-panels #lbkbne-child-seven-panel{
+display:block
+}
+#lbkbne-one:checked ~ .lbkbne-id-details-tabs #lbkbne-child-one-tab,
+#lbkbne-two:checked ~ .lbkbne-id-details-tabs #lbkbne-child-two-tab,
+#lbkbne-three:checked ~ .lbkbne-id-details-tabs #lbkbne-child-three-tab,
+#lbkbne-four:checked ~ .lbkbne-id-details-tabs #lbkbne-child-four-tab,
+#lbkbne-five:checked ~ .lbkbne-id-details-tabs #lbkbne-child-five-tab,
+#lbkbne-six:checked ~ .lbkbne-id-details-tabs #lbkbne-child-six-tab,
+#lbkbne-seven:checked ~ .lbkbne-id-details-tabs #lbkbne-child-seven-tab{
+background:#ffffff;color:#000000;border-top:3px solid #000000;
+}
+/*-------------//News & Events-----------------*/
+/*-------------Profile------------------------*/
+details div{
+border-left:1px solid #000000;
+border-right:1px solid #000000;
+border-bottom:1px solid #000000;
+padding:1.5em;
+}
+details div > * + * {
+margin-top:1.5em;
+}
+details + details {
+margin-top:.5rem;
+}
+summary{
+list-style:none;
+}
+summary::-webkit-details-marker{
+display:none;
+}
+summary{
+border:1px solid #000000;
+padding:.75em 1em;
+cursor:pointer;
+position:relative;
+padding-left:calc(1.75rem + .75rem + .75rem);
+}
+summary:before{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+left:.75rem;
+content:"→";
+width:1.75rem;
+height:1.75rem;
+background-color:#000000;
+color:#ffffff;
+display:inline-flex;
+justify-content:center;
+align-items:center;
+flex-shrink:0;
+}
+details[open] summary{
+background-color:#ffffff;
+}
+details[open] summary:before{
+content:"↑";
+}
+summary:hover{
+background-color:#ffffff;
+}
+code{
+font-family:monospace;
+}
+.calltoaction-profile {
+color:#ffffff;
+border:1px solid #000000;
+border-radius:4px 4px 4px 4px;
+line-height:20px;
+display:inline-block;
+font-weight:bold;
+outline:none;
+padding:0 10px;
+margin-bottom:5px;
+background:#000000;
+}
+/*-------------//Profile------------------------*/
+/*-------------e-Courses-----------------*/
+.lbkb-e-Courses-card{
+margin:0px;
+margin-left:5px;
+background-color:#ffffff;
+border-radius:10px;
+box-shadow:0 2px 10px #000000;
+overflow:hidden;
+display:inline-block;
+width:100%;
+min-width:98%;
+max-width:98%;
+}
+.lbkb-e-Courses-card-body{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:flex-start;
+padding:20px;
+min-height:100px;
+}
+.lbkb-e-Courses-tag{
+background-color:#000000;
+border-radius:50px;
+font-size:12px;
+margin:0;
+color:#ffffff;
+padding:2px 10px;
+text-transform:uppercase;
+}
+.lbkb-e-Courses-card-body p{
+font-size:13px;
+margin:20px 0 40px;
+}
+.lbkb-e-Courses-card-body button{
+font-size:13px;
+text-transform:uppercase;
+cursor:pointer;
+background-color:#ffffff;
+color:#a40008;
+border:1px solid #a40008;
+border-radius:10px;
+}
+/*-------------//e-Courses-----------------*/
+/*-------------Supporters-----------------*/
+.support button{
+font-size:13px;
+text-transform:uppercase;
+cursor:pointer;
+background-color:#ffffff;
+color:#a40008;
+border:1px solid #a40008;
+border-radius:10px;
+}
+.supportindex-jumpbox{
+border-top:1px solid #ddd;
+border-bottom:1px solid #ddd;
+margin:1em 0 1em 0;
+padding:0.4em;
+font-style:bold;
+text-align:center;
+}
+/*-------------//Supporters-----------------*/
+/*-------------All e-Courses -----------------*/
+#e-header{
+padding: 20px 0 5px 40px;
+}
+#e-header a{
+color:#a40008;
+text-decoration:none;
+font-size:40px;
+font-family:'Lato', Verdana, Helvetica, sans-serif;
+}
+#e-header a:hover{
+color:#ff0000;
+text-decoration:none;
+}
+/*-------------//All e-Courses-----------------*/
+/*-------------e-Courses Start Session------------*/
+#container-left-reg{
+width:100%;
+min-width:99%;
+max-width:99%;
+border-radius:10px;
+border:1px solid #000000;
+box-shadow:0 0 8px #000000;
+}
+
+@keyframes blink{
+0%{box-shadow:0 0 18px #000000;}
+50%{box-shadow:none;}
+100%{box-shadow:0 0 18px #000000;}
+}
+
+@webkit-keyframes blink{
+0%{box-shadow:0 0 18px #000000;}
+50%{box-shadow:none;}
+100%{box-shadow:0 0 18px #000000;}
+}
+
+#container-left-reg{
+-webkit-animation:blink 1.0s linear infinite;
+-moz-animation:blink 1.0s linear infinite;
+-ms-animation:blink 1.0s linear infinite;
+-o-animation:blink 1.0s linear infinite;
+animation:blink 1.0s linear infinite;
+}
+
+#container-left-cite{
+width:100%;
+min-width:99%;
+max-width:99%;
+border-radius:10px;
+border:1px solid #000000;
+/*box-shadow: 0 0 8px #000000;*/
+}
+
+.container-left-title{
+padding:5px 15px;
+font-size:16px;
+font-weight:bold;
+color:#000000;
+}
+
+#container-left-reg p{
+padding:5px;
+text-align:justify;
+}
+
+.calltoaction-reg{
+color:#ffffff;
+border:1px solid #a40008;
+border-radius:4px 4px 4px 4px;
+line-height:28px;
+display:inline-block;
+font-weight:bold;
+outline:none;
+padding:0 12px;
+margin-left:5px;
+margin-bottom:15px;
+background:#a40008;
+}
+
+.calltoaction-reg:hover{
+border:1px solid #ff0000;
+background-color:#ff0000;
+}
+
+.calltoaction-reg a{
+font-size:13px;
+color:#ffffff!important;
+}
+
+.calltoaction-reg a:hover{
+text-decoration:none;
+color:#ffffff;
+background-color:#ff0000;
+}
+/*-------------//e-Courses Registration------------------------*/
+/*-------------e-Courses Review------------------------*/
+.review-progress-bar{
+width:100%;
+background-color:#ffffff;
+border:1px solid #000000;
+border-radius:4px 4px 4px 4px;
+}
+
+.review-bar{
+height:15px;
+background-color:#000000;
+text-align:center;
+line-height:15px;
+color:#ffffff;
+}
+/*-------------//e-Courses Review------------------------*/
+/*-------------e-Courses Retrun------------------------*/
+.calltoaction-ret{
+color:#ffffff;
+border:1px solid #a40008;
+border-radius:4px 4px 4px 4px;
+line-height:28px;
+display:inline-block;
+font-weight:bold;
+outline:none;
+padding:0 12px;
+margin-left:2px;
+margin-bottom:15px;
+background:#a40008;
+font-family:'Lato', Verdana, Helvetica, sans-serif;
+}
+
+.calltoaction-ret:hover{
+border:1px solid #ff0000;
+background:#ff0000;
+}
+
+.calltoaction-ret a{
+font-size:13px;
+color:#ffffff!important;
+}
+
+.calltoaction-ret a:hover{
+text-decoration:none;
+color:#ffffff;
+background:#ff0000;
+}
+/*-------------//e-Courses Return------------------------*/
+/*-------------e-Courses Module------------------------*/
+#container-module{
+width:100%;
+min-width:99%;
+max-width:99%;
+border-radius:10px;
+border:1px solid #000000;
+margin-left:5px;
+}
+
+.container-module-title{
+padding:5px 15px;
+font-size:16px;
+font-weight:bold;
+color:#000000;
+}
+
+#container-module p{
+padding:5px 20px;
+text-align:justify;
+}
+
+.calltoaction-module{
+color:#ffffff;
+border:1px solid #a40008;
+border-radius:4px 4px 4px 4px;
+line-height:28px;
+display:inline-block;
+font-weight:bold;
+outline:none;
+padding:0 12px;
+margin-left:20px;
+margin-bottom:15px;
+background:#a40008;
+}
+
+.calltoaction-module:hover{
+border:1px solid #ff0000;
+background:#ff0000;
+}
+
+.calltoaction-module a{
+font-size:13px;
+color:#ffffff!important;
+}
+
+.calltoaction-module a:hover{
+text-decoration:none;
+color:#ffffff;
+background:#ff0000;
+}
+/*-------------//e-Courses Module------------------------*/
+/*-------------e-book Purchase Module------------------------*/
+.book-box{
+display:inline-block;
+width:100%;
+min-width:99%;
+max-width:99%;
+text-align:center;
+font-family:'Lato', Verdana, Helvetica, sans-serif;
+}
+
+.book-img-container{
+height:200px;
+width:140px;
+overflow:hidden;
+border-radius:20px 20px 20px 20px;
+display:inline-block;
+box-shadow:0px 0px 5px 0px #000000;
+}
+
+.book-img-container img{height:200px;}
+
+.book-inner-skew{
+display:inline-block;
+border-radius:20px;
+overflow:hidden;
+padding:0px;
+font-size:0px;
+background:#c8c2c2;
+height:200px;
+width:140px;
+}
+
+.book-text-container{
+box-shadow:0px 0px 5px 0px #000000;
+padding:120px 20px 20px 20px;
+border-radius:20px;
+background:#ffffff;
+margin:-120px 0px 0px 0px;
+line-height:19px;
+font-size:13px;
+}
+
+.book-text-container h3{
+margin:20px 0px 10px 0px;
+color:#000000;
+font-size:18px;
+}
+
+.calltoaction-book-module{
+color:#ffffff;
+border:1px solid #a40008;
+border-radius:4px 4px 4px 4px;
+line-height:28px;
+display:inline-block;
+font-weight:bold;
+outline:none;
+padding:0 12px;
+margin-left:10px;
+margin-bottom:15px;
+background:#a40008;
+}
+.calltoaction-book-module:hover{
+background:#ff0000;
+border:1px solid #ff0000;
+}
+.calltoaction-book-module a{
+font-size:13px;
+color:#ffffff!important;
+}
+
+.calltoaction-book-module a:hover{
+text-decoration:none;
+color:#ffffff;
+}
+/*-------------//e-book Purchase Module------------------------*/
+
+
+
+
+/*-------------e-Course Notice Board------------------------*/
+#left-notice-board{
+width:100%;
+min-width:99%;
+max-width:99%;
+border-radius:10px;
+border:1px solid #000000;
+}
+
+.left-notice-title{
+padding:5px 15px;
+font-size:14px;
+font-weight:bold;
+color: #000000;
+}
+/*-------------//e-Course Notice Board------------------------*/
+
+/*-------------e-Course Quiz------------------------*/
+.question{font-weight: 600;}
+.answers {margin-bottom: 20px;}
+#submit{
+font-family:'Lato', Verdana, Helvetica, sans-serif;
+font-size: 13px;
+background-color:#a40008;
+color:#ffffff;
+border:0px;
+border-radius:3px;
+padding:5px;
+cursor: pointer;
+margin-bottom: 20px;
+}
+
+#submit:hover{
+background-color: #ffffff;
+color:#a40008;
+border:1px solid #a40008;
+}
+/*-------------//e-Course Quiz------------------------*/
+
+/*-------------e-Course Certificate------------------------*/
+#CertInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 13px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#CertTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 13px;
+}
+
+#CertTable th, #CertTable td {
+  text-align: left;
+  padding: 10px 10px;
+  font-size: 10px;
+}
+
+#CertTable a{
+color:#a40008;
+text-decoration:none;
+font-size: 10px;
+}
+#CertTable a:focus, a:hover{
+color:#ff0000;
+text-decoration:none;
+}
+
+#CertTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#CertTable tr.header, #CertTable tr:hover {
+  background-color: #ffffff;
+}
+/*-------------//e-Course Certificate------------------------*/
