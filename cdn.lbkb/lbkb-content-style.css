@@ -1,4 +1,4 @@
-/*------------- Author: Lalatendu Bidyadhara Kumar Barik -----------------*/
+/*Author: Lalatendu Bidyadhara Kumar Barik */
 body,td,th,tr,p,a{
 font-family:'Lato', Verdana, Helvetica, sans-serif;
 font-size:13px;
@@ -87,7 +87,6 @@ border-radius:5px;
 float:none;
 margin:0 20px 20px 0;
 }
-
 .search input{
 width:610px;
 height:20px;
@@ -99,13 +98,11 @@ background:#ffffff;
 border:1px solid #a40008;
 border-radius:5px 0 0 5px;
 }
-
 .search input:focus{
 outline:0;
 background:#ffffff;
 box-shadow:0 0 2px #a40008 inset;
 }
-
 .search button{
 overflow:visible;
 position:relative;
@@ -124,16 +121,13 @@ background:#680000;
 text-shadow:0 -1px 0 rgba(0, 0 ,0, .4);
 border-radius:0 5px 5px 0;
 }
-
 .search button:hover{
 background:#ff0000;
 }
-
 .search button:active,
 .search button:focus{
 background:#ff0000;
 }
-
 .search button:before{
 content:'';
 position:absolute;
@@ -370,19 +364,16 @@ border-radius:10px;
 border:1px solid #000000;
 box-shadow:0 0 8px #000000;
 }
-
 @keyframes blink{
 0%{box-shadow:0 0 18px #000000;}
 50%{box-shadow:none;}
 100%{box-shadow:0 0 18px #000000;}
 }
-
 @webkit-keyframes blink{
 0%{box-shadow:0 0 18px #000000;}
 50%{box-shadow:none;}
 100%{box-shadow:0 0 18px #000000;}
 }
-
 #container-left-reg{
 -webkit-animation:blink 1.0s linear infinite;
 -moz-animation:blink 1.0s linear infinite;
@@ -390,7 +381,6 @@ box-shadow:0 0 8px #000000;
 -o-animation:blink 1.0s linear infinite;
 animation:blink 1.0s linear infinite;
 }
-
 #container-left-cite{
 width:100%;
 min-width:99%;
@@ -399,19 +389,16 @@ border-radius:10px;
 border:1px solid #000000;
 /*box-shadow: 0 0 8px #000000;*/
 }
-
 .container-left-title{
 padding:5px 15px;
 font-size:16px;
 font-weight:bold;
 color:#000000;
 }
-
 #container-left-reg p{
 padding:5px;
 text-align:justify;
 }
-
 .calltoaction-reg{
 color:#ffffff;
 border:1px solid #a40008;
@@ -425,17 +412,14 @@ margin-left:5px;
 margin-bottom:15px;
 background:#a40008;
 }
-
 .calltoaction-reg:hover{
 border:1px solid #ff0000;
 background-color:#ff0000;
 }
-
 .calltoaction-reg a{
 font-size:13px;
 color:#ffffff!important;
 }
-
 .calltoaction-reg a:hover{
 text-decoration:none;
 color:#ffffff;
@@ -449,7 +433,6 @@ background-color:#ffffff;
 border:1px solid #000000;
 border-radius:4px 4px 4px 4px;
 }
-
 .review-bar{
 height:15px;
 background-color:#000000;
@@ -473,17 +456,14 @@ margin-bottom:15px;
 background:#a40008;
 font-family:'Lato', Verdana, Helvetica, sans-serif;
 }
-
 .calltoaction-ret:hover{
 border:1px solid #ff0000;
 background:#ff0000;
 }
-
 .calltoaction-ret a{
 font-size:13px;
 color:#ffffff!important;
 }
-
 .calltoaction-ret a:hover{
 text-decoration:none;
 color:#ffffff;
@@ -499,19 +479,16 @@ border-radius:10px;
 border:1px solid #000000;
 margin-left:5px;
 }
-
 .container-module-title{
 padding:5px 15px;
 font-size:16px;
 font-weight:bold;
 color:#000000;
 }
-
 #container-module p{
 padding:5px 20px;
 text-align:justify;
 }
-
 .calltoaction-module{
 color:#ffffff;
 border:1px solid #a40008;
@@ -525,17 +502,14 @@ margin-left:20px;
 margin-bottom:15px;
 background:#a40008;
 }
-
 .calltoaction-module:hover{
 border:1px solid #ff0000;
 background:#ff0000;
 }
-
 .calltoaction-module a{
 font-size:13px;
 color:#ffffff!important;
 }
-
 .calltoaction-module a:hover{
 text-decoration:none;
 color:#ffffff;
@@ -551,7 +525,6 @@ max-width:99%;
 text-align:center;
 font-family:'Lato', Verdana, Helvetica, sans-serif;
 }
-
 .book-img-container{
 height:200px;
 width:140px;
@@ -560,9 +533,7 @@ border-radius:20px 20px 20px 20px;
 display:inline-block;
 box-shadow:0px 0px 5px 0px #000000;
 }
-
 .book-img-container img{height:200px;}
-
 .book-inner-skew{
 display:inline-block;
 border-radius:20px;
@@ -573,7 +544,6 @@ background:#c8c2c2;
 height:200px;
 width:140px;
 }
-
 .book-text-container{
 box-shadow:0px 0px 5px 0px #000000;
 padding:120px 20px 20px 20px;
@@ -583,13 +553,11 @@ margin:-120px 0px 0px 0px;
 line-height:19px;
 font-size:13px;
 }
-
 .book-text-container h3{
 margin:20px 0px 10px 0px;
 color:#000000;
 font-size:18px;
 }
-
 .calltoaction-book-module{
 color:#ffffff;
 border:1px solid #a40008;
@@ -611,16 +579,11 @@ border:1px solid #ff0000;
 font-size:13px;
 color:#ffffff!important;
 }
-
 .calltoaction-book-module a:hover{
 text-decoration:none;
 color:#ffffff;
 }
 /*-------------//e-book Purchase Module------------------------*/
-
-
-
-
 /*-------------e-Course Notice Board------------------------*/
 #left-notice-board{
 width:100%;
@@ -629,7 +592,6 @@ max-width:99%;
 border-radius:10px;
 border:1px solid #000000;
 }
-
 .left-notice-title{
 padding:5px 15px;
 font-size:14px;
@@ -637,7 +599,6 @@ font-weight:bold;
 color: #000000;
 }
 /*-------------//e-Course Notice Board------------------------*/
-
 /*-------------e-Course Quiz------------------------*/
 .question{font-weight: 600;}
 .answers {margin-bottom: 20px;}
@@ -652,14 +613,12 @@ padding:5px;
 cursor: pointer;
 margin-bottom: 20px;
 }
-
 #submit:hover{
 background-color: #ffffff;
 color:#a40008;
 border:1px solid #a40008;
 }
 /*-------------//e-Course Quiz------------------------*/
-
 /*-------------e-Course Certificate------------------------*/
 #CertInput {
   background-position: 10px 12px;
@@ -670,20 +629,17 @@ border:1px solid #a40008;
   border: 1px solid #ddd;
   margin-bottom: 12px;
 }
-
 #CertTable {
   border-collapse: collapse;
   width: 100%;
   border: 1px solid #ddd;
   font-size: 13px;
 }
-
 #CertTable th, #CertTable td {
   text-align: left;
   padding: 10px 10px;
   font-size: 10px;
 }
-
 #CertTable a{
 color:#a40008;
 text-decoration:none;
@@ -693,11 +649,9 @@ font-size: 10px;
 color:#ff0000;
 text-decoration:none;
 }
-
 #CertTable tr {
   border-bottom: 1px solid #ddd;
 }
-
 #CertTable tr.header, #CertTable tr:hover {
   background-color: #ffffff;
 }
